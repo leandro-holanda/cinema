@@ -14,4 +14,4 @@ class ReviewCreateListView(generics.ListCreateAPIView):
 class ReviewRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Review.objects.all()
     serializer_class = ReviewModelSerializer
-    permission_classes = [IsReviewAuthor]
+    permission_classes = [IsReviewAuthor,]
