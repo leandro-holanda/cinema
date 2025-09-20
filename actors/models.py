@@ -37,3 +37,7 @@ class Actor(models.Model):
     name = models.CharField(max_length=250)
     birthday = models.DateField()
     nacionality = models.CharField(choices=NACIONALITY_CHOICES, max_length=2)
+
+
+    def __str__(self):
+        return self.name
