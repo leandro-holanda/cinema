@@ -1,4 +1,6 @@
 from django.db import models
+from django.core.exceptions import ValidationError
+from datetime import date
 
 NACIONALITY_CHOICES = [
     ('AF', 'Afeganistão'),
